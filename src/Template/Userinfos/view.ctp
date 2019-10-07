@@ -9,11 +9,11 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit Userinfo'), ['action' => 'edit', $userinfo->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete Userinfo'), ['action' => 'delete', $userinfo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $userinfo->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Userinfo'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('List Userinfos'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Userinfo'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
-<div class="userinfo view large-9 medium-8 columns content">
+<div class="userinfos view large-9 medium-8 columns content">
     <h3><?= h($userinfo->id) ?></h3>
     <table class="vertical-table">
         <tr>

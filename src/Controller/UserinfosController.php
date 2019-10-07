@@ -19,6 +19,12 @@ class UserinfosController extends AppController
      */
     public function index()
     {
+        $keyword = $this->request->query('keyword');
+        if(!empty($keyword)){
+            $this->paginate = [
+                'conditions' =>['username LIKE'=>'%'.$keyword.'%']
+            ];
+        }
         $userinfos = $this->paginate($this->Userinfos);
 
         $this->set(compact('userinfos'));
@@ -111,7 +117,12 @@ class UserinfosController extends AppController
     //             $this->Auth->setUser($user);
     //             return $this->redirect(['controller' => 'posts']);
     //         }
-    //         $this->Flash->error('error');
+    //        else {
+    //             $this->Flash->error('error');
+    //        }
     //     }
     // }
+    
+    
+
 }

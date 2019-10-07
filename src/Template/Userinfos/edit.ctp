@@ -13,10 +13,10 @@
                 ['confirm' => __('Are you sure you want to delete # {0}?', $userinfo->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Userinfo'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Userinfos'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
-<div class="userinfo form large-9 medium-8 columns content">
+<div class="userinfos form large-9 medium-8 columns content">
     <?= $this->Form->create($userinfo) ?>
     <fieldset>
         <legend><?= __('Edit Userinfo') ?></legend>

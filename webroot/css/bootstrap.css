@@ -50,6 +50,10 @@
           box-sizing: border-box;
 }
 
+.index-container {
+  margin:3%;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
